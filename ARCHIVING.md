@@ -8,13 +8,14 @@ This document describes how Project Phoenix is archived for academic citation an
 
 This repository will be archived on Zenodo for long-term preservation and academic citation.
 
-**Status:** Pending
+**Status:** Archived
 
 **Archive Details:**
 - **Title:** Project Phoenix: The Agentic Greenfield Pipeline for Legacy Modernization
 - **Version:** 1.0.0
 - **Date:** 2026-03-07
 - **License:** CC BY 4.0
+- **DOI:** [10.5281/zenodo.18904231](https://doi.org/10.5281/zenodo.18904231)
 
 ---
 

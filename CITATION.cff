@@ -8,6 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0006-2011-3258"
 repository-code: "https://github.com/semanticintent/project-phoenix"
 url: "https://phoenix.cormorantforaging.dev"
+doi: "10.5281/zenodo.18904231"
 abstract: >-
   Project Phoenix is a six-agent agentic pipeline that transforms legacy
   systems into modern, greenfield applications. Instead of translating old

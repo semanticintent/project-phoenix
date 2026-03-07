@@ -1,6 +1,7 @@
 # Project Phoenix
 ## The Agentic Greenfield Pipeline for Legacy Modernization
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18904231.svg)](https://doi.org/10.5281/zenodo.18904231)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![GitHub](https://img.shields.io/badge/GitHub-semanticintent%2Fproject--phoenix-blue)](https://github.com/semanticintent/project-phoenix)
 
@@ -210,7 +211,7 @@ If you use or reference Project Phoenix in your work, please cite:
 
 ### APA Style
 
-Shatny, M. (2026). Project Phoenix: The Agentic Greenfield Pipeline for Legacy Modernization. Zenodo. https://doi.org/10.5281/zenodo.PENDING
+Shatny, M. (2026). Project Phoenix: The Agentic Greenfield Pipeline for Legacy Modernization. Zenodo. https://doi.org/10.5281/zenodo.18904231
 
 ### BibTeX
 
@@ -221,7 +222,7 @@ Shatny, M. (2026). Project Phoenix: The Agentic Greenfield Pipeline for Legacy M
   year = {2026},
   publisher = {Zenodo},
   url = {https://github.com/semanticintent/project-phoenix},
-  doi = {10.5281/zenodo.PENDING},
+  doi = {10.5281/zenodo.18904231},
   note = {ORCID: 0009-0006-2011-3258}
 }
 ```
