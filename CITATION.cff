@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: "Project Phoenix: The Agentic Greenfield Pipeline for Legacy Modernization"
+message: "If you use this methodology, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Shatny
+    given-names: Michael
+    orcid: "https://orcid.org/0009-0006-2011-3258"
+repository-code: "https://github.com/semanticintent/project-phoenix"
+url: "https://phoenix.cormorantforaging.dev"
+abstract: >-
+  Project Phoenix is a six-agent agentic pipeline that transforms legacy
+  systems into modern, greenfield applications. Instead of translating old
+  code line-by-line, Phoenix extracts the business logic -- the rules,
+  workflows, and intent buried inside decades of legacy code -- and rebuilds
+  from zero. The core thesis: the code is not the asset, the business rules
+  are the asset.
+keywords:
+  - legacy modernization
+  - agentic pipeline
+  - greenfield development
+  - business logic extraction
+  - software transformation
+  - AI-native development
+  - cormorant foraging
+  - phoenix methodology
+license: CC-BY-4.0
+version: 1.0.0
+date-released: "2026-03-07"
+references:
+  - type: software
+    title: "Cormorant Foraging Framework: A Three-Dimensional Taxonomy for Intelligence Systems"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+    doi: "10.5281/zenodo.18210081"
+    url: "https://github.com/semanticintent/cormorant-foraging-framework"
+  - type: software
+    title: "6D Foraging Methodology: Strategic Dimensional Discovery"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+    doi: "10.5281/zenodo.18209946"
+    url: "https://github.com/semanticintent/6d-foraging-methodology"
+  - type: software
+    title: "PACE: Pattern for Agentic Conversational Experience"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+    doi: "10.5281/zenodo.18049371"
+    url: "https://github.com/semanticintent/pace-pattern"
