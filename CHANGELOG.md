@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-03-31
+
+### Added
+- A-00 Signal Extraction as the new first pipeline stage — produces mission brief and signal `.sil` files before code analysis begins
+- EMBER artifact format — all agents read and write `.sil` files as their canonical artifact format
+- Reference to [`@semanticintent/phoenix-runtime`](https://www.npmjs.com/package/@semanticintent/phoenix-runtime) — the open-source npm package that orchestrates the pipeline
+
+### Changed
+- Pipeline updated from six agents to seven (A-00 through A-06)
+- Agent numbering convention updated from 1–6 to A-00 through A-06 for consistency with the runtime implementation
+- PIPELINE.md and README.md updated throughout to reflect the seven-agent structure
+
+---
+
 ## [1.0.0] - 2026-03-07
 
 ### Added

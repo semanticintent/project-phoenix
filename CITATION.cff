@@ -10,12 +10,13 @@ repository-code: "https://github.com/semanticintent/project-phoenix"
 url: "https://phoenix.cormorantforaging.dev"
 doi: "10.5281/zenodo.18904231"
 abstract: >-
-  Project Phoenix is a six-agent agentic pipeline that transforms legacy
+  Project Phoenix is a seven-agent agentic pipeline that transforms legacy
   systems into modern, greenfield applications. Instead of translating old
   code line-by-line, Phoenix extracts the business logic -- the rules,
   workflows, and intent buried inside decades of legacy code -- and rebuilds
   from zero. The core thesis: the code is not the asset, the business rules
-  are the asset.
+  are the asset. Agents communicate through EMBER .sil artifact files.
+  Reference implementation available as @semanticintent/phoenix-runtime on npm.
 keywords:
   - legacy modernization
   - agentic pipeline
@@ -26,8 +27,8 @@ keywords:
   - cormorant foraging
   - phoenix methodology
 license: CC-BY-4.0
-version: 1.0.0
-date-released: "2026-03-07"
+version: 1.1.0
+date-released: "2026-03-31"
 references:
   - type: software
     title: "Cormorant Foraging Framework: A Three-Dimensional Taxonomy for Intelligence Systems"

@@ -1,22 +1,49 @@
-# The Six-Agent Pipeline
+# The Seven-Agent Pipeline
 
 > *Extract the intent. Rebuild from zero.*
 
 ## Overview
 
-Project Phoenix decomposes legacy modernization into six sequential stages, each handled by a specialized AI agent. The output of each agent feeds the next. Human validation gates separate every stage.
+Project Phoenix decomposes legacy modernization into seven sequential stages, each handled by a specialized AI agent. The output of each agent feeds the next. Human validation gates separate every stage.
 
 ```
-Source Code --> [1] Extractor --> GATE --> [2] Archaeologist --> GATE --> [3] Synthesizer
-                                                                              |
-                                                                            GATE
-                                                                              |
-[6] Validator <-- GATE <-- [5] Builder <-- GATE <-- [4] Architect <-- GATE --+
+[A-00] Signal Extraction --> GATE --> [A-01] Extractor --> GATE --> [A-02] Archaeologist
+                                                                           |
+                                                                         GATE
+                                                                           |
+[A-06] Validator <-- GATE <-- [A-05] Builder <-- GATE <-- [A-04] Architect <-- GATE <-- [A-03] Synthesizer
 ```
+
+Every agent reads and writes `.sil` artifact files — EMBER's structured, human-readable format. The artifact trail is the audit log.
 
 ---
 
-## Agent 1: Business Logic Extractor
+## A-00: Signal Extraction
+
+**Project Context -> Mission Brief**
+
+Before any code is touched, A-00 reads everything known about the application — documentation, stakeholder notes, route tables, schemas, config files — and produces the mission brief. Every downstream agent reads this brief before it begins. A-00 is orientation, not analysis.
+
+### Inputs
+
+- Any available documentation (requirements, wikis, onboarding notes)
+- System surface: route table, database schema, configuration files, integration specs
+- Stakeholder-provided context
+
+### Outputs
+
+| Output | Description |
+|---|---|
+| **Mission Brief** | Structured summary of the system — what it does, who uses it, what it connects to, known risks |
+| **Signal .sil files** | One signal per domain concept — the vocabulary every downstream agent shares |
+
+### Human Gate
+
+The AI Software Lead confirms the mission brief accurately reflects the system and stakeholder intent before pipeline execution begins.
+
+---
+
+## A-01: Business Logic Extractor
 
 **Source Code -> Business Requirements**
 
@@ -54,7 +81,7 @@ The AI Software Lead reviews the catalog against stakeholder knowledge, flags ob
 
 ---
 
-## Agent 2: Interface Archaeologist
+## A-02: Interface Archaeologist
 
 **UI/UX -> User Intent Model**
 
@@ -90,7 +117,7 @@ The AI Software Lead confirms user journeys match actual daily workflows, identi
 
 ---
 
-## Agent 3: Requirements Synthesizer
+## A-03: Requirements Synthesizer
 
 **Logic + Interface -> Unified Specification**
 
@@ -123,7 +150,7 @@ This is the most important gate. The AI Software Lead reviews for completeness, 
 
 ---
 
-## Agent 4: Solution Architect
+## A-04: Solution Architect
 
 **Requirements -> Stack & Blueprint**
 
@@ -158,7 +185,7 @@ The AI Software Lead reviews the tech stack against organizational capabilities,
 
 ---
 
-## Agent 5: Builder Fleet
+## A-05: Builder Fleet
 
 **Blueprint -> Working Software**
 
@@ -209,7 +236,7 @@ The AI Software Lead reviews critical code paths, confirms the build matches the
 
 ---
 
-## Agent 6: Validator & Certifier
+## A-06: Validator & Certifier
 
 **New System <-> Original Requirements**
 
