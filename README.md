@@ -13,7 +13,7 @@
 
 ## Abstract
 
-**Project Phoenix** is a six-agent agentic pipeline that transforms legacy systems into modern, greenfield applications. Instead of translating old code line-by-line, Phoenix extracts the business logic -- the rules, workflows, and intent buried inside decades of legacy code -- and rebuilds from zero.
+**Project Phoenix** is a seven-agent agentic pipeline that transforms legacy systems into modern, greenfield applications. Instead of translating old code line-by-line, Phoenix extracts the business logic -- the rules, workflows, and intent buried inside decades of legacy code -- and rebuilds from zero.
 
 The name comes from the mythological bird (Bennu, ~1500 BCE) that burns itself to ash and is reborn. The old system dies. The knowledge lives.
 
@@ -40,24 +40,29 @@ Legacy modernization has been stuck for decades because the industry confused th
 
 ---
 
-## The Six-Agent Pipeline
+## The Seven-Agent Pipeline
 
 ```
-Source Code --> [1] Extractor --> [2] Archaeologist --> [3] Synthesizer
-                                                             |
-               [6] Validator <-- [5] Builder <-- [4] Architect
+[A-00] Signal Extraction --> [A-01] Extractor --> [A-02] Archaeologist --> [A-03] Synthesizer
+                                                                                  |
+[A-06] Validator <-- [A-05] Builder <-- [A-04] Architect <---------------------+
 ```
 
 | Agent | Role | Output |
 |-------|------|--------|
-| **1. Business Logic Extractor** | Source Code -> Business Requirements | Rules catalog, workflow maps, edge cases |
-| **2. Interface Archaeologist** | UI/UX -> User Intent Model | Screen inventory, journey maps, role matrix |
-| **3. Requirements Synthesizer** | Logic + Interface -> Unified Spec | Single source of truth, gap analysis |
-| **4. Solution Architect** | Requirements -> Stack & Blueprint | Tech stack, API contracts, build plan |
-| **5. Builder Fleet** | Blueprint -> Working Software | Production codebase, CI/CD, documentation |
-| **6. Validator & Certifier** | New System <-> Original Requirements | Regression proof, coverage report |
+| **A-00 Signal Extraction** | Project Context -> Mission Brief | Signal .sil files, mission brief |
+| **A-01 Business Logic Extractor** | Source Code -> Business Requirements | Rules catalog, workflow maps, edge cases |
+| **A-02 Interface Archaeologist** | UI/UX -> User Intent Model | Screen inventory, journey maps, role matrix |
+| **A-03 Requirements Synthesizer** | Logic + Interface -> Unified Spec | Single source of truth, gap analysis |
+| **A-04 Solution Architect** | Requirements -> Stack & Blueprint | Tech stack, API contracts, build plan |
+| **A-05 Builder Fleet** | Blueprint -> Working Software | Production codebase, CI/CD, documentation |
+| **A-06 Validator & Certifier** | New System <-> Original Requirements | Regression proof, coverage report |
 
 Each agent is detailed in [PIPELINE.md](PIPELINE.md).
+
+All agents read and write `.sil` artifact files — structured, human-readable documents in [EMBER format](https://github.com/semanticintent/phoenix-runtime). The artifact trail is the audit log.
+
+**Reference implementation:** [`@semanticintent/phoenix-runtime`](https://www.npmjs.com/package/@semanticintent/phoenix-runtime) — orchestrates the pipeline, manages `.sil` state, enforces human gates.
 
 ---
 
