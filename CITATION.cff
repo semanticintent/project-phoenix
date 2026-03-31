@@ -1,53 +1,75 @@
 cff-version: 1.2.0
-title: "Project Phoenix: The Agentic Greenfield Pipeline for Legacy Modernization"
-message: "If you use this methodology, please cite it using the metadata from this file."
+message: "If you use or reference Project Phoenix in your work, please cite it using this metadata."
 type: software
+
+title: "Project Phoenix: The Agentic Greenfield Pipeline for Legacy Modernization"
+version: 1.0.0
+date-released: 2026-03-31
+doi: "10.5281/zenodo.19360727"
+
 authors:
   - family-names: Shatny
     given-names: Michael
     orcid: "https://orcid.org/0009-0006-2011-3258"
-repository-code: "https://github.com/semanticintent/project-phoenix"
-url: "https://phoenix.cormorantforaging.dev"
-doi: "10.5281/zenodo.18904231"
-abstract: >-
-  Project Phoenix is a seven-agent agentic pipeline that transforms legacy
-  systems into modern, greenfield applications. Instead of translating old
-  code line-by-line, Phoenix extracts the business logic -- the rules,
-  workflows, and intent buried inside decades of legacy code -- and rebuilds
-  from zero. The core thesis: the code is not the asset, the business rules
-  are the asset. Agents communicate through EMBER .sil artifact files.
-  Reference implementation available as @semanticintent/phoenix-runtime on npm.
+
+abstract: >
+  Project Phoenix is a seven-agent agentic pipeline for legacy system
+  modernization. Instead of translating old code line-by-line, Phoenix
+  extracts the business logic — the rules, workflows, and intent buried
+  inside decades of legacy code — and rebuilds from zero. The pipeline
+  consists of seven agents: A-00 Signal Extraction, A-01 Business Logic
+  Extractor, A-02 UI Archaeologist, A-03 Requirements Synthesizer,
+  A-04 Solution Architect, A-05 Builder, and A-06 Validator & Certifier.
+  All artifacts are written in EMBER Semantic Intent Language (.sil) —
+  a typed, human-readable, agent-parseable format. The runtime is
+  available as @semanticintent/phoenix-runtime on npm.
+  DOI: 10.5281/zenodo.19360782
+
 keywords:
-  - legacy modernization
-  - agentic pipeline
-  - greenfield development
-  - business logic extraction
-  - software transformation
-  - AI-native development
-  - cormorant foraging
-  - phoenix methodology
+  - legacy-modernization
+  - agent-pipeline
+  - business-logic-extraction
+  - ember
+  - sil
+  - semantic-intent
+  - methodology-as-infrastructure
+  - phoenix
+  - greenfield
+  - agentic-pipeline
+
 license: CC-BY-4.0
-version: 1.1.0
-date-released: "2026-03-31"
+
+repository-code: "https://github.com/semanticintent/project-phoenix"
+
 references:
   - type: software
-    title: "Cormorant Foraging Framework: A Three-Dimensional Taxonomy for Intelligence Systems"
+    title: "Phoenix Runtime: Orchestration Layer for the Seven-Agent Legacy Modernization Pipeline"
     authors:
       - family-names: Shatny
         given-names: Michael
-    doi: "10.5281/zenodo.18210081"
-    url: "https://github.com/semanticintent/cormorant-foraging-framework"
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.19360782"
+
+  - type: article
+    title: "Methodology-as-Infrastructure: From Framework to Runtime"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.18946631"
+
   - type: software
+    title: "CAL Runtime: Cormorant Agentic Language Execution Engine"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.18905193"
+
+  - type: article
     title: "6D Foraging Methodology: Strategic Dimensional Discovery"
     authors:
       - family-names: Shatny
         given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
     doi: "10.5281/zenodo.18209946"
-    url: "https://github.com/semanticintent/6d-foraging-methodology"
-  - type: software
-    title: "PACE: Pattern for Agentic Conversational Experience"
-    authors:
-      - family-names: Shatny
-        given-names: Michael
-    doi: "10.5281/zenodo.18049371"
-    url: "https://github.com/semanticintent/pace-pattern"
