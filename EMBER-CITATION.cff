@@ -1,0 +1,85 @@
+cff-version: 1.2.0
+message: "If you use or reference the EMBER language specification in your work, please cite it using this metadata."
+type: software
+
+title: "EMBER: Semantic Intent Language Specification (.sil)"
+version: 0.1.0
+date-released: 2026-03-31
+
+authors:
+  - family-names: Shatny
+    given-names: Michael
+    orcid: "https://orcid.org/0009-0006-2011-3258"
+
+abstract: >
+  EMBER is the artifact representation language of Project Phoenix.
+  It defines the .sil (Semantic Intent Language) file format — a typed,
+  human-readable, agent-parseable format for carrying methodology
+  artifacts across a multi-agent legacy modernization pipeline.
+  EMBER specifies five constructs: SIGNAL (pre-forage knowledge units),
+  WORKFLOW (server-side call stack traces), SCREEN (ASCII UI wireframes),
+  SPEC (semantic intent specifications), and EPISODE (change memory and
+  propagation records). Every artifact produced by the Phoenix seven-agent
+  pipeline is written in .sil format. EMBER is the second instantiation
+  of the Methodology-as-Infrastructure pattern — where CAL (.cal) is
+  methodology-as-executor, EMBER (.sil) is methodology-as-memory.
+  The name reflects what the language captures: the business logic
+  that survives a legacy system — the ember from which the new system rises.
+
+keywords:
+  - dsl
+  - domain-specific-language
+  - semantic-intent-language
+  - sil
+  - ember
+  - legacy-modernization
+  - methodology-as-infrastructure
+  - artifact-representation
+  - agent-pipeline
+  - phoenix
+  - business-logic-extraction
+
+license: MIT
+
+repository-code: "https://github.com/semanticintent/project-phoenix"
+
+references:
+  - type: software
+    title: "Project Phoenix: The Agentic Greenfield Pipeline for Legacy Modernization"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.18904231"
+
+  - type: article
+    title: "Methodology-as-Infrastructure: From Framework to Runtime"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.18946631"
+
+  - type: software
+    title: "CAL Language Specification: Cormorant Agentic Language Documentation"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.18905197"
+
+  - type: software
+    title: "CAL Runtime: Cormorant Agentic Language Execution Engine"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.18905193"
+
+  - type: article
+    title: "Semantic Intent as Single Source of Truth"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    doi: "10.5281/zenodo.17114972"
